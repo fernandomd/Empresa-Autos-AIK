@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>logueo</title>
 	<link rel="stylesheet" type="text/css" href="../0-bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../2-vista/css/fontello.css">
+  <link rel="stylesheet" type="text/css" href="../2-vista/css/vista.css">
 	
 </head>
 <body>
@@ -14,21 +16,35 @@
       <div class="container-fluid">
           <div class="panel panel-primary">
               <div class="panel-heading">
-                  <center>
-                    <h2> Iniciar Sesión</h2><br>
-                  </center>
-              </div>
-              <div class="container-fluid">
-                  <div class="form-group"><br>
-                        <input type="text" name="txt" class="form-control" placeholder="Login"><br>
-                        <input type="password" name="password" class="form-control" placeholder="Password"><br>
-                        <form action="inicio.html"> <input type="submit" value="Acceder" class="btn btn-primary"></form>
+                  <div class="titulo-Encabezado">
+                     <h2 class="icon-user-1"> Iniciar Sesión</h2><br>
                   </div>
               </div>
-          </div>
+              <div class="container-fluid">
+                  <script>
+                    function usrpas(){
+                      if (document.form1.txt.value=="aik" && document.form1.password.value=="aik"){window.location="inicio.html"}
+                      else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+                      }
+                      document.oncontextmenu=new Function("return false");
+                  </script>
+                  <form name="form1">
+                  <div class="login">
+                    <div class="form-group"><br>
+                       <div class="login" id="mensaje">Iniciar sesión en AIK <p class="icon-cab"></p>
+                          <input type="text" name="txt" class="form-control" placeholder="Login"><br>
+                          <input type="password" name="password" class="form-control" placeholder="Password"><br>
+                          <input type="button" name="enviar" class="btn btn-primary" value="Acceder" onclick="usrpas()">
+                          <input type="reset" name="borrar" class="btn btn-danger" value="Limpiar" >
+                        </div>
+                    </div>
+                  </div>
+                  </form>
+              </div>
+          </div> 
+      </div>       
       </div>
-      </div> 
-  </div>       
+  </div>
   </div>              
-  </body>
+</body>
 </html>

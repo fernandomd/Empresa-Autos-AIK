@@ -74,6 +74,18 @@ footer {
 							  }
 
 
+/*TODO LOGUEO.HTML */
+/*type para la clase login hecha para logueo.html*/
+.login  {
+	      width: 300px;
+		  margin: 10px auto;
+        }
+        /*type para el id mensaje hecha para el texto Iniciar Sesión en AIK*/
+	    #mensaje  {
+		            text-align: center;
+		            font-size: 20px;
+	              }
+
 
 
 

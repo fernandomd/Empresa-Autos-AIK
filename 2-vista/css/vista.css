@@ -48,6 +48,18 @@ footer {
 	       margin:auto;
          }
 
+
+/*TODO CONTACTO.HTML */
+/*type para la clase contacto  hecha para el contenido dentro de la etiqueta section de contacto.html*/
+.contacto {
+		    text-align: center;
+			font-size: 15px;
+		  }
+		  /*id correo hecha para el correo de la etiqueta section para el contenido*/
+		  #correo  {
+		  		     color:#B0C1E3;
+		 		   }
+     
          
 /*TODO INICIO.HTML */
 /*type para la clase cerrar hecha para cerrar sesión de inicio.html*/
